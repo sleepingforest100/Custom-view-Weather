@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeatherView">
+        <attr name="weather_temp" format="string"/>
+        <attr name="weather_cloud" format="reference"/>
+        <attr name="weather_times_of_day" format="enum">
+            <enum name="day" value="0"/>
+            <enum name="night" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

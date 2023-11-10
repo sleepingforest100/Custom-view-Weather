@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#362A84"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#362A84">
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -14,9 +15,55 @@
         android:paddingVertical="14dp"
         android:textSize="28sp" />
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <kz.just_code.customview.view.WeatherView
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:weather_temp="19"
+                android:layout_marginTop="16dp"
+                app:weather_cloud="@drawable/ic_rain"
+                app:weather_times_of_day="night"/>
+
+            <kz.just_code.customview.view.WeatherView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:weather_temp="34"
+                android:layout_marginTop="16dp"
+                app:weather_cloud="@drawable/ic_angled_rain"
+                app:weather_times_of_day="day"/>
+
+            <kz.just_code.customview.view.WeatherView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:weather_temp="12"
+                android:layout_marginTop="16dp"
+                app:weather_cloud="@drawable/ic_mid_rain"
+                app:weather_times_of_day="night"/>
+
+            <kz.just_code.customview.view.WeatherView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:weather_temp="0"
+                android:layout_marginTop="16dp"
+                app:weather_cloud="@drawable/ic_angled_rain"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
 
     <!-- Layout с информацией о погоде (как weather_item.xml) -->
-    <include
+   <!-- <include
         layout="@layout/fragment_weather"
         android:id="@+id/weatherView1"
         android:layout_width="match_parent"
@@ -68,6 +115,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/weatherView5"
         android:layout_marginTop="16dp"
-       />
+       />-->
 
-</RelativeLayout>
+</LinearLayout>
