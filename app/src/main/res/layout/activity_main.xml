@@ -30,31 +30,53 @@
                 android:layout_height="wrap_content"
                 app:weather_temp="19"
                 android:layout_marginTop="16dp"
-                app:weather_cloud="@drawable/ic_rain"
-                app:weather_times_of_day="night"/>
+                app:weather_times_of_day="day"
+                app:weather_city="Montreal"
+                app:weather_country="Canada"
+                app:weather_precipitation_type="light_rain"
+                app:weather_has_wind="false"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:weather_temp="34"
                 android:layout_marginTop="16dp"
-                app:weather_cloud="@drawable/ic_angled_rain"
-                app:weather_times_of_day="day"/>
+                app:weather_times_of_day="night"
+                app:weather_city="Toronto"
+                app:weather_country="Canada"
+                app:weather_precipitation_type="light_snow"
+                app:weather_has_wind="true"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:weather_temp="12"
                 android:layout_marginTop="16dp"
-                app:weather_cloud="@drawable/ic_mid_rain"
-                app:weather_times_of_day="night"/>
+                app:weather_times_of_day="day"
+                app:weather_city="Tokyo"
+                app:weather_country="Japan"
+                app:weather_precipitation_type="heavy_rain"
+                app:weather_has_wind="false"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:weather_temp="0"
+                app:weather_temp="4"
                 android:layout_marginTop="16dp"
-                app:weather_cloud="@drawable/ic_angled_rain"/>
+                app:weather_times_of_day="night"
+                app:weather_city="Tennessee"
+                app:weather_precipitation_type="heavy_snow"
+                app:weather_has_wind="true"/>
+            <kz.just_code.customview.view.WeatherView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:weather_temp="10"
+                android:layout_marginTop="16dp"
+                app:weather_times_of_day="day"
+                app:weather_city="Astana"
+                app:weather_country="Kazakhstan"
+                app:weather_precipitation_type="light_snow"
+                app:weather_has_wind="true"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

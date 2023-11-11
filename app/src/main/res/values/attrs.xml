@@ -2,10 +2,18 @@
 <resources>
     <declare-styleable name="WeatherView">
         <attr name="weather_temp" format="string"/>
-        <attr name="weather_cloud" format="reference"/>
         <attr name="weather_times_of_day" format="enum">
-            <enum name="day" value="0"/>
+            <enum name="day" value="0" />
             <enum name="night" value="1"/>
         </attr>
+        <attr name="weather_precipitation_type" format="enum">
+            <enum name="light_rain" value="0" />
+            <enum name="heavy_rain" value="1"/>
+            <enum name="light_snow" value="2" />
+            <enum name="heavy_snow" value="3"/>
+        </attr>
+        <attr name="weather_has_wind" format="boolean" />
+        <attr name="weather_city" format="string"/>
+        <attr name="weather_country" format="string"/>
     </declare-styleable>
 </resources>
