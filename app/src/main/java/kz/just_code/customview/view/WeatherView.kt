@@ -23,6 +23,7 @@ class WeatherView @JvmOverloads constructor(
 
     init {
         setAttrs(attrs, R.styleable.WeatherView) {
+            binding.description.text = it.getString((R.styleable.WeatherView_weather_description))
             binding.temp.text = it.getString(R.styleable.WeatherView_weather_temp)
             binding.city.text = it.getString(R.styleable.WeatherView_weather_city)
             binding.country.text = it.getString(R.styleable.WeatherView_weather_country)

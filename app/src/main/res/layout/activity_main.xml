@@ -34,7 +34,8 @@
                 app:weather_city="Montreal"
                 app:weather_country="Canada"
                 app:weather_precipitation_type="light_rain"
-                app:weather_has_wind="false"/>
+                app:weather_has_wind="false"
+                app:weather_description="Light rain"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
@@ -45,7 +46,8 @@
                 app:weather_city="Toronto"
                 app:weather_country="Canada"
                 app:weather_precipitation_type="light_snow"
-                app:weather_has_wind="true"/>
+                app:weather_has_wind="true"
+                app:weather_description="Light snow"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
@@ -56,7 +58,8 @@
                 app:weather_city="Tokyo"
                 app:weather_country="Japan"
                 app:weather_precipitation_type="heavy_rain"
-                app:weather_has_wind="false"/>
+                app:weather_has_wind="false"
+                app:weather_description="Heavy rain"/>
 
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
@@ -66,7 +69,8 @@
                 app:weather_times_of_day="night"
                 app:weather_city="Tennessee"
                 app:weather_precipitation_type="heavy_snow"
-                app:weather_has_wind="true"/>
+                app:weather_has_wind="true"
+                app:weather_description="Heavy snow"/>
             <kz.just_code.customview.view.WeatherView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,7 +80,8 @@
                 app:weather_city="Astana"
                 app:weather_country="Kazakhstan"
                 app:weather_precipitation_type="light_snow"
-                app:weather_has_wind="true"/>
+                app:weather_has_wind="true"
+                app:weather_description="Light snow"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
